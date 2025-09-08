@@ -1,0 +1,305 @@
+/* =================================
+   section: Global reset
+   ================================= */
+body{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main-div
+{
+    max-width: 1000px;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+}
+
+/* =================================
+   section: Header style
+   ================================= */
+#mypage-header{
+    min-height: 100px;
+    color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6e6e68;
+}
+
+/* =================================
+   section: Center page style
+   ================================= */
+#mypage-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: lightgray;
+    padding: 20px 20px 20px 10px;
+}
+.mypage-content{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+/* =================================
+   section: Left navigation style
+   ================================= */
+.mypage-leftnav{
+    border-left: #FF1A00 solid 2px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftnav-names{
+    text-align: center;
+}
+
+/* ===================================
+   section: center content page style
+   =================================== */
+.center-content{
+    padding-left: 25px;
+}
+.mypage-center-content{
+    border-right: #FF1A00 solid 0px;
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    align-items: center;
+    line-height: 1.6;
+    padding:10px 20px;
+}
+
+/* =================================
+   section: Footer style
+   ================================= */
+#mypage-footer{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    background-color: #6e6e68;
+}
+#footer-title{
+    font-weight: 600;
+    font-size: large;
+    margin-top: 12px;
+}
+#footer-body{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.footer-content{
+    display: flex;
+    gap: 15px;
+}
+
+   /* =================================
+   container section
+   ================================= */
+#js-wrapper{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+ /* =================================
+  javascript section
+   ================================= */
+.title{
+    text-align: center;
+}
+#max-container{
+    padding: 30px;
+    /* border-radius: 20px; */
+    width: 350px;
+    
+}
+#max, #stringreverse, #longest-word, #cookies{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.lebel-data, #button{
+    font-weight: 600;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 3px;
+}
+.button{
+    width: 100%;
+    padding: 10px;
+    background-color: #6e6e68;
+    border: solid 1px lightgray;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.button:hover{
+    font-weight: 600;
+    background-color: red;
+    border: 1px solid #ccc;
+    color: #FFFF88;
+    border: red solid 2px;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+#num1-error, #num2-error, #string-error, #longest-word-string-error, #name-error, #phone-error {
+    color: red;
+    font-size: small;
+    font-weight: 400;
+    margin-top: -5px;
+}
+#error-max, #global-error, #stringreverse-error, #longest-word-error{
+    color: red;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    /* font-weight: 500; */
+}
+.require-symbol{
+    color: red;
+}
+#message-container, #global-error{
+    display: flex;
+    justify-content: center;
+}
+#max-value, #stringreverse-result, #longest-word-result,#cookie-result{
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    word-break: break-word;
+}
+
+/* =================================
+   section: Responsive page style
+   ================================= */
+@media (max-width: 576px) {
+    
+    /* =================================
+   section: Header style
+   ================================= */
+    #header-name{
+        font-size: 26px;
+    }
+
+    /* =================================
+   section: Center page style
+   ================================= */
+    .mypage-content{
+        flex-direction: column;
+    }
+    .mypage-center-content{
+        border-right: none;
+        font-size: small;
+    }
+    .mypage-leftnav{
+        border-left: none;
+    }
+    .leftnav-names{
+        font-size: 20px;
+    }
+    .center-content-headers{
+        font-size: 15px; 
+    }
+
+    /* =================================
+    JavaScript
+
+    max container section
+    ================================= */
+   #max-container{
+    max-width: 200px;
+    padding: 25px;
+   }
+
+   #logest_word_button{
+    margin-top: 18px;
+   }
+}
+
+
+
+/* // chenging */
+
+#mypage-header.highlight-bg,
+#mypage-body.highlight-bg,
+#mypage-footer.highlight-bg
+{
+    background-color: #FFFF88;
+}
+
+.border-box.highlight-bg{
+    background-color: #FFFF88;
+    border-radius: 20px;
+    /* color: #CC0000; */
+}
+
+#mypage-header.highlight-border,
+#mypage-footer.highlight-border{
+    border:#FF1A00 solid 2px;
+    /* color: #CC0000; */
+}
+#js-wrapper.highlight-border{
+     border:#FF1A00 solid 2px;
+     border-top: none;
+}
+#mypage-body.highlight-border{
+    border: #FF1A00 solid 2px;
+    border-top: none;
+    /* color: #CC0000; */
+}
+
+.section-heading{
+    font-weight: 600;
+}
+
+#max-num1.input-field-border,
+#max-num2.input-field-border,
+#stringInput.input-field-border,
+#input-string.input-field-border,
+#name.input-field-border,
+#phone.input-field-border{
+    border: none;
+    outline: none;
+}
+
+.button-bg{
+    background-color: #FFFF88;
+    border: #FF1A00 solid 2px;
+    color: #CC0000;
+    font-weight: 600;
+    font-size: medium;
+}
+
+#reference-section{
+    display: none;
+}
+
+#mypage-header.highlight-text,
+#mypage-body.highlight-text,
+#mypage-footer.highlight-text,
+#js-wrapper.highlight-text{
+    color: #CC0000;
+}

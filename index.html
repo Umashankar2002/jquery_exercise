@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="main-div" class="section-border">   
+         <!--=================================
+            Header section
+            ================================= -->
+        <header id="mypage-header" class="section-bg section-border section-text">
+            <h1 id="header-name">Umashankar</h1>
+        </header>
+
+         <!--=================================
+            center section
+            ================================= -->
+        <main id="mypage-body" class="section-bg section-border section-text">
+           <section class="mypage-content">
+                <div class="mypage-leftnav"><h2 class="leftnav-names">Objective</h2></div>
+                <div class="mypage-center-content"><p class="center-content">I am an aspiring and motivated Full Stack Developer with knowledge of Java, Data Structures and Algorithms (DSA), and web technologies such as HTML, CSS, and JavaScript. I am eager to begin my career and contribute to the growth of your organization.</p></div>
+           </section>
+           <section  class="mypage-content">
+                <div class="mypage-leftnav"><h2 class="leftnav-names">Education</h2></div>
+                <div class="mypage-center-content">
+                    <ul>
+                        <li>
+                            <h3 class="center-content-headers">Rajiv Gandhi University of Knowledge and Technologies Kadapa</h3>
+                            <p>
+                                Bachelor of Technology (CSE) <strong>(2020 - 2024)</strong>
+                            </p>
+                        </li>    
+                        <li>
+                            <h3 class="center-content-headers">Rajiv Gandhi University of Knowledge and Technologies Kadapa</h3>
+                            <p>
+                                Pre-University Course <strong>(2018 - 2020)</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="center-content-headers">Z.P.P.H.School</h3>
+                            <p>Secondary Education <strong>(2013 - 2018)</strong></p>
+                        </li>
+                    </ul>
+                </div>
+           </section>
+           <section class="mypage-content">
+                <div class="mypage-leftnav"><h2 class="leftnav-names">Skills</h2></div>
+                <div class="mypage-center-content"><p class="center-content">Java, DSA, SQL, HTML, CSS, JavaScript, Advanced Java.</p></div>
+           </section>
+           <section class="mypage-content">
+                <div class="mypage-leftnav"><h2 class="leftnav-names">Work Experience</h2></div>
+                <div class="mypage-center-content"><p class="center-content">Successfully completed my 3-month internship at MountBlue, during which I worked on a Trello clone project.</p></div>
+           </section>
+           <section class="mypage-content">
+                <div class="mypage-leftnav"><h2 class="leftnav-names">Projects</h2></div>
+                <div class="mypage-center-content">
+                    <ul>
+                        <li>
+                            <h3 class="center-content-headers">Missing Person Identification (Mini Project):</h3>
+                            <p>
+                                Developed and deployed a facial recognition system to identify missing persons. Users can upload their photos and personal details, which helps match them with existing family information so they can be contacted and reunited with their families.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="center-content-headers">Online Petrol Ordering and Mechanical Services Platform (Major Project):</h3>
+                            <p>Developed and managed an online platform for ordering petrol and mechanical services based on user requirements. If a user's vehicle breaks down on the road, they can use the platform to report the issue and receive appropriate assistance.</p>
+                        </li>
+                        <li>
+                            <h3 class="center-content-headers">Trello Project:</h3>
+                            <p>
+                                Designed and implemented a basic Trello management system, allowing users to create boards, lists, cards, and checklists. This project was later removed as it directly interacted with the official Trello website.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+           </section>
+
+
+           <!-- // reference part -->
+            <div id="reference-section">
+                <section class="mypage-content section-bg section-border">
+                    <div class="mypage-leftnav"><h2 class="leftnav-names">References</h2></div>
+                    <div class="mypage-center-content">
+                        <ul class="list">
+                            <li>
+                                <span class="section-heading">Name:</span> <span class="section-content theme-element">Shanmugavadivu</span>
+                            </li>
+                            <li>
+                                <span class="section-heading">Designation: </span> <span class="section-content theme-element">Manager</span>
+                            </li>
+                            <li>
+                                <span class="section-heading">Email ID: </span> <span class="section-content theme-element">psvadivu@gmail.com</span>
+                            </li>
+                            <li>
+                                <span class="section-heading">Phone: </span> <span class="section-content theme-element">9865431000</span>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+           </div>
+        </main>
+
+        <!--=================================
+            footer section
+            ================================= -->
+        <footer id="mypage-footer" class="section-bg section-border section-text">
+            <div id="footer-title">Contact Info</div>
+            <div id="footer-body">
+                <div class="footer-content">
+                    <div>Phone :</div>
+                    <div>+91 <span id="footer-phone">9618446504</span></div>
+                </div>
+                <div class="footer-content">
+                    <div>Email :</div>
+                    <div>umashankar@cloudnix.com</div>
+                </div>
+            </div>
+        </footer>
+
+        <!--=================================
+           javascript section
+
+           find max number
+            ================================= -->
+        <div id="js-wrapper" class="section-border section-text">
+            <div class="section-bg border-box">
+                <h2 class="title">Find Max Number</h2>
+                <div id="max-container">
+                    <form id="max">
+                        
+                        <div class="form-group">
+                            <label for="max-num1" class="lebel-data">Number 1:<span class="require-symbol">*</span></label>
+                            <input type="number" id="max-num1" placeholder="Enter the number" class="input-field " onkeyup="num1_input_data(event)">
+                            <span id="num1-error"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="max-num2" class="lebel-data">Number 2:<span class="require-symbol">*</span></label>
+                            <input type="number" id="max-num2" placeholder="Enter the number" class="input-field" onkeyup="num2_input_data(event)">
+                            <span id="num2-error"></span>
+                        </div>
+                
+                        <button type="submit" class="button">Find Max</button>
+                        <div id="message-container">
+                            <span id="error-max"></span>
+                            <span id="max-value"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!--=================================
+            reverse a string
+            ================================= -->
+            <div class="section-bg border-box">
+                <h2 class="title">Reverse a String</h2>
+                <div id="max-container">
+                    <form id="stringreverse">
+                        
+                        <div class="form-group">
+                            <label for="stringInput" class="lebel-data">Enter a string:<span class="require-symbol">*</span></label>
+                            <input type="text" id="stringInput" placeholder="Enter a string" class="input-field" onkeyup="string_input_data(event)">
+                            <span id="string-error"></span>
+                        </div>
+                    
+                        <button type="submit" class="button">Reverse</button>
+                        <div id="message-container">
+                             <span id="stringreverse-error"></span>
+                            <span id="stringreverse-result"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!--=================================
+            Find Longest word
+            ================================= -->
+            <div class="section-bg border-box">
+                <h2 class="title">Find Longest Word</h2>
+                <div id="max-container">
+                    <form id="longest-word">
+                        
+                        <div class="form-group">
+                            <label for="input-string" class="lebel-data">Enter comma-separated words:<span class="require-symbol">*</span></label>
+                            <input type="text" id="input-string" placeholder="Ex: uma,shankar,lokesh" class="input-field" onkeyup="check_longest_word_string(event)">
+                            <span id="longest-word-string-error"></span>
+                        </div>
+                    
+                        <button type="submit" class="button" id="logest_word_button">Find Longest Word</button>
+                        <div id="message-container">
+                            <span id="longest-word-error"></span>
+                            <span id="longest-word-result"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+            <!--=================================
+            cookies
+            ================================= -->
+            <div class="section-bg border-box">
+                <h2 class="title">Cookies</h2>
+                <div id="max-container">
+                    <form id="cookies">
+                        
+                        <div class="form-group">
+                            <label for="name" class="lebel-data">Name:<span class="require-symbol">*</span></label>
+                            <input type="text" id="name" placeholder="Enter the name" class="input-field" onkeyup="cookie_name_input_data(event)">
+                            <span id="name-error"></span>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="phone" class="lebel-data">Phone:<span class="require-symbol">*</span></label>
+                            <input type="tel" id="phone" placeholder="Enter the Phone number" class="input-field" onkeyup="cookie_phone_input_data(event)">
+                            <span id="phone-error"></span>
+                        </div>
+                
+                        <button type="submit" class="button">Find Max</button>
+                        <div id="message-container">
+                            <span id="global-error"></span>
+                            <span id="cookie-result"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>   
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
