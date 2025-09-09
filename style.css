@@ -7,7 +7,6 @@ body{
     box-sizing: border-box;
 }
 
-
 #main-div
 {
     max-width: 1000px;
@@ -16,7 +15,7 @@ body{
 }
 
 /* =================================
-   section: Header style
+    section: Header style
    ================================= */
 #mypage-header{
     min-height: 100px;
@@ -35,8 +34,7 @@ body{
 #mypage-body{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background-color: lightgray;
+    gap: 12px;
     padding: 20px 20px 20px 10px;
 }
 .mypage-content{
@@ -149,7 +147,7 @@ body{
 .button{
     width: 100%;
     padding: 10px;
-    background-color: #6e6e68;
+    /* background-color: #6e6e68; */
     border: solid 1px lightgray;
     color: white;
     border-radius: 3px;
@@ -240,9 +238,15 @@ body{
 }
 
 
+  /* =================================
+        JQuery section
+    ================================= */
 
-/* // chenging */
-
+    
+ /* =================================
+        background color
+    ================================= */
+/* background color for resume content*/
 #mypage-header.highlight-bg,
 #mypage-body.highlight-bg,
 #mypage-footer.highlight-bg
@@ -250,31 +254,46 @@ body{
     background-color: #FFFF88;
 }
 
+/* backgound color for containers */
 .border-box.highlight-bg{
     background-color: #FFFF88;
     border-radius: 20px;
-    /* color: #CC0000; */
+}
+/* border color for buttons */
+.button-bg{
+    background-color: #FFFF88;
+    border: #FF1A00 solid 2px;
+    color: #CC0000;
+    font-weight: 600;
+    font-size: medium;
 }
 
+ /* =================================
+        border color
+    ================================= */
+
+/* border color for header and footer*/
 #mypage-header.highlight-border,
 #mypage-footer.highlight-border{
     border:#FF1A00 solid 2px;
-    /* color: #CC0000; */
 }
-#js-wrapper.highlight-border{
+
+/* border color for center content and containers */
+#js-wrapper.highlight-border,
+#mypage-body.highlight-border{
      border:#FF1A00 solid 2px;
      border-top: none;
 }
-#mypage-body.highlight-border{
-    border: #FF1A00 solid 2px;
-    border-top: none;
-    /* color: #CC0000; */
-}
 
-.section-heading{
+/* reference section heading */
+.reference-section-heading{
     font-weight: 600;
 }
 
+ /* =================================
+        removing borders
+    ================================= */
+/* removing border for all input fields */
 #max-num1.input-field-border,
 #max-num2.input-field-border,
 #stringInput.input-field-border,
@@ -285,18 +304,12 @@ body{
     outline: none;
 }
 
-.button-bg{
-    background-color: #FFFF88;
-    border: #FF1A00 solid 2px;
-    color: #CC0000;
-    font-weight: 600;
-    font-size: medium;
-}
-
-#reference-section{
+/* hiding the reference part */
+#reference{
     display: none;
 }
 
+/* giving color to text */
 #mypage-header.highlight-text,
 #mypage-body.highlight-text,
 #mypage-footer.highlight-text,
