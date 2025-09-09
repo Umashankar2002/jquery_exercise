@@ -255,7 +255,8 @@ body{
 /* backgound color for containers */
 .border-box.highlight-bg{
     background-color: #FFFF88;
-    border-radius: 20px;
+    border-radius: 18px;
+    
 }
 /* border color for buttons */
 .button-bg{
@@ -272,12 +273,13 @@ body{
 
 /* border color for header and footer*/
 #mypage-header.highlight-border,
-#mypage-footer.highlight-border{
+#mypage-footer.highlight-border,
+.border-box.highlight-bg
+{
     border:#FF1A00 solid 2px;
 }
 
 /* border color for center content and containers */
-#js-wrapper.highlight-border,
 #mypage-body.highlight-border{
      border:#FF1A00 solid 2px;
      border-top: none;
