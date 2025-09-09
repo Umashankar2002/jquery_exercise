@@ -119,11 +119,9 @@ body{
 .title{
     text-align: center;
 }
-#max-container{
+.max-container{
     padding: 30px;
-    /* border-radius: 20px; */
     width: 350px;
-    
 }
 #max, #stringreverse, #longest-word, #cookies{
     display: flex;
@@ -227,12 +225,12 @@ body{
 
     max container section
     ================================= */
-   #max-container{
+   .max-container{
     max-width: 200px;
     padding: 25px;
    }
 
-   #logest_word_button{
+   #longest_word_button{
     margin-top: 18px;
    }
 }
@@ -242,7 +240,7 @@ body{
         JQuery section
     ================================= */
 
-    
+
  /* =================================
         background color
     ================================= */
