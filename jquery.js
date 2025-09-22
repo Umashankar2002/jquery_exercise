@@ -16,7 +16,7 @@ $(document).ready(function() {
     $(".button").addClass("button-bg");
 
      //hiding footer section of the resume
-    $("#mypage-footer").hide();
+    // $("#mypage-footer").hide();
 
     // showing the reference section
     $("#reference").show();

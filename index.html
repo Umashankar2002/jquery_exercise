@@ -6,16 +6,18 @@
     <title>CSS Exercise</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="jquery.js"></script>
+    
 </head>
 <body>
     <div id="main-div" class="section-border">   
          <!--=================================
             Header section
             ================================= -->
-        <header id="mypage-header" class="section-bg section-border section-text">
-            <h1 id="header-name">Umashankar</h1>
-        </header>
+        <div  id="mypage-header" class="section-bg section-border section-text">
+            <header>
+                <h1 id="header-name">Umashankar</h1>
+            </header>
+        </div>
 
          <!--=================================
             center section
@@ -108,19 +110,27 @@
         <!--=================================
             footer section
             ================================= -->
-        <footer id="mypage-footer" class="section-bg section-border section-text">
-            <div id="footer-title">Contact Info</div>
-            <div id="footer-body">
-                <div class="footer-content">
-                    <div>Phone :</div>
-                    <div>+91 <span id="footer-phone">9618446504</span></div>
-                </div>
-                <div class="footer-content">
-                    <div>Email :</div>
-                    <div>umashankar@cloudnix.com</div>
-                </div>
-            </div>
+      <div id="mypage-footer" class="section-bg section-border section-text">
+        <footer id="mypage-footer-content">
+            <h2>Contact Details</h2>
+            <p class="footer-content">
+                Email: uma@gmail.com
+            </p>
+            <p class="footer-content">
+                Phone: +91 9898981234
+            </p>
         </footer>
+    </div>
+
+    <!-- =======================================
+            Custom alert             
+        ========================================= -->
+        <div id="card-alert">
+            <div class="card-box">
+                <p>Animation Completed!</p>
+                <button id="card-ok">OK</button>
+            </div>
+        </div>
 
         <!--=================================
            javascript section
@@ -235,8 +245,10 @@
 
     </div>   
 
-    <script src="script.js">
+    <script src="script.js"></script>
+  <script src="jquery2.js"></script>
+  <script src="jquery.js"></script>
 
-    </script>
+
 </body>
 </html>
