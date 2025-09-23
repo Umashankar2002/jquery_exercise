@@ -18,7 +18,7 @@ body{
     section: Header style
    ================================= */
 #mypage-header{
-    /* min-height: 100px; */
+    min-height: 10px;
     color: white;
     position: sticky;
     top: 0;
@@ -78,7 +78,7 @@ body{
    section: Footer style
    ================================= */
 #mypage-footer{
-    min-height: 100px;
+    min-height: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,8 +326,7 @@ body{
     header part
    ========================*/
 .header-shrink {
-  height: 10px !important;
-  min-height: 0px !important;
+  height: 10px;
   overflow: hidden;
   transition: height 0.5s ease; 
 }
@@ -342,7 +341,7 @@ body{
     footer part
   ==========================*/
 #mypage-footer {
-    min-height: 10px !important;
+    min-height: 10px;
     overflow: hidden;
     background-color: #f0f0f0;
     transition: all 0.9s ease;
@@ -352,22 +351,11 @@ body{
     display: none;
 }
 
-#card-alert {
-  display: none;
-  position: fixed; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.4); 
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-}
-
 /* =====================
     cart alert box
    =====================*/
 #card-alert {
+  display: none;
   position: fixed; 
   top: 50%;
   left: 50%;

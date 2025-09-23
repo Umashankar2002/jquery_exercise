@@ -12,25 +12,20 @@ $(document).ready(function () {
     /****************************************
      * adding slide down animation to footer*
     ****************************************/
-   let isAlert = false;
     $("#mypage-footer").on("mouseenter", function () {
         $("#mypage-footer-content").stop(true, true).slideDown(10000, function() {
             $("#card-alert").fadeIn(200); 
-            isAlert = true;
         });
     });
 
     $("#mypage-footer").on("mouseleave", function () {
-        if(!isAlert)
-        {
-            $("#mypage-footer-content").stop(true).slideUp(1000, function() {
-            });
+        if (!$("#card-alert").is(":visible")) {
+            $("#mypage-footer-content").stop(true).slideUp(1000);
         }
     });
 
     $("#card-ok").on("click", () => {
         $("#card-alert").fadeOut(200);
         $("#mypage-footer-content").stop(true).slideUp(1000);
-        isAlert = false;
     });
 });
