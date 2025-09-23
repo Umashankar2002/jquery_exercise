@@ -355,7 +355,6 @@ body{
     cart alert box
    =====================*/
 #card-alert {
-  display: none;
   position: fixed; 
   top: 50%;
   left: 50%;

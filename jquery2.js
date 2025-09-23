@@ -12,6 +12,7 @@ $(document).ready(function () {
     /****************************************
      * adding slide down animation to footer*
     ****************************************/
+    $("#card-alert").hide();
     $("#mypage-footer").on("mouseenter", function () {
         $("#mypage-footer-content").stop(true, true).slideDown(10000, function() {
             $("#card-alert").fadeIn(200); 
